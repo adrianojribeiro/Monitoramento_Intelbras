@@ -45,5 +45,10 @@ namespace Monitoramento_Intelbras
             axVLCPlugin21.playlist.stop();      
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

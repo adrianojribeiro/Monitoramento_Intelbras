@@ -29,22 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.axVLCPlugin21 = new AxAXVLC.AxVLCPlugin2();
             this.btnstart = new System.Windows.Forms.Button();
             this.txtcamera = new System.Windows.Forms.TextBox();
             this.btnstop = new System.Windows.Forms.Button();
+            this.axVLCPlugin21 = new AxAXVLC.AxVLCPlugin2();
             ((System.ComponentModel.ISupportInitialize)(this.axVLCPlugin21)).BeginInit();
             this.SuspendLayout();
-            // 
-            // axVLCPlugin21
-            // 
-            this.axVLCPlugin21.Enabled = true;
-            this.axVLCPlugin21.Location = new System.Drawing.Point(12, 12);
-            this.axVLCPlugin21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.axVLCPlugin21.Name = "axVLCPlugin21";
-            this.axVLCPlugin21.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axVLCPlugin21.OcxState")));
-            this.axVLCPlugin21.Size = new System.Drawing.Size(731, 469);
-            this.axVLCPlugin21.TabIndex = 0;
             // 
             // btnstart
             // 
@@ -79,6 +69,16 @@
             this.btnstop.UseVisualStyleBackColor = true;
             this.btnstop.Click += new System.EventHandler(this.btnstop_Click);
             // 
+            // axVLCPlugin21
+            // 
+            this.axVLCPlugin21.Enabled = true;
+            this.axVLCPlugin21.Location = new System.Drawing.Point(12, 12);
+            this.axVLCPlugin21.Margin = new System.Windows.Forms.Padding(2);
+            this.axVLCPlugin21.Name = "axVLCPlugin21";
+            this.axVLCPlugin21.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axVLCPlugin21.OcxState")));
+            this.axVLCPlugin21.Size = new System.Drawing.Size(731, 469);
+            this.axVLCPlugin21.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,6 +91,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.axVLCPlugin21)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
